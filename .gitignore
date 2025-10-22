@@ -1,0 +1,25 @@
+# Sanal ortam klasörü
+venv/
+/venv/
+
+# API anahtarı ve diğer gizli bilgiler
+.env*
+*.env
+
+# Büyük model ve indeks klasörleri
+bge-m3/
+/bge-m3/
+faiss_index*/
+/faiss_index*/
+
+# Python cache ve derlenmiş dosyalar
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter/Colab checkpoint dosyaları (eğer varsa)
+.ipynb_checkpoints/
+
+# Streamlit cache/config (bazen oluşabilir)
+.streamlit/
