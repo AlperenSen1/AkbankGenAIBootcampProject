@@ -41,7 +41,7 @@
 
 4.  **Bağımlılıkları Yükleyin:**
    gerekli paketleri doğrudan kurun
-        ```bash
+
         pip install -U "protobuf>=5.29.1" streamlit langchain langchain-core langchain-community langchain-text-splitters langchain-google-genai google-generativeai faiss-cpu python-dotenv
         ```
 
