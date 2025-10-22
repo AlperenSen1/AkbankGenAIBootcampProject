@@ -51,15 +51,13 @@ terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için te
         * Windows (CMD): `set GOOGLE_API_KEY=KENDİ API KEYİNİZ`
         * Mac/Linux: `export GOOGLE_API_KEY=KENDİ API KEYİNİZ`
 
-6.  **Vektör Veritabanı Otomatik Oluşturulacak:** 
-    * ⚠️ **Uyarı:** Bu ilk indeks oluşturma işlemi, anayasa metninin uzunluğuna bağlı olarak **birkaç dakika sürebilir** ve Google API kotanızı kullanır. Sonraki çalıştırmalar çok daha hızlı olacaktır.
 
-7.  **Uygulamayı Başlatın:**
+6.  **Uygulamayı Başlatın:**
     ```bash
     streamlit run app.py
     ```
 
-8.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
+7.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
 
 ## Yapılandırma (Varsayılanlar - `app.py` içinde) ⚙️
 
