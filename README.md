@@ -61,7 +61,7 @@
 6.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
 
 
-## ÖNEMLİ (Bu projenin verdiği cevaplardan çok daha iyi cevaplar üretebilen bir model oluşturdum ancak o modeli web sitesi olarak yayınlamam için sunucu kiralayamadığımdan dolayı ve projemizin web sitesi olarak sunulması şartı sebebi ile buraya sadece colab linki bırakabiliyorum https://colab.research.google.com/drive/1fSvkQywtTMjglK99Yzrw1_0ouVRD2Azq?usp=sharing )
+## ÖNEMLİ (Bu projenin verdiği cevaplardan çok daha iyi cevaplar üretebilen bir model oluşturdum ancak o modeli colab platformunda geliştirdim. O projeyi web sitesi olarak yayınlayamadığımdan dolayı ve projemizin web sitesi olarak sunulması şartı sebebi ile asıl proje dosyalarının yanında Untitled3.ipynb dosyası olarak sunabiliyorum )
 
 ## Yapılandırma (Varsayılanlar - `app.py` içinde) ⚙️
 
