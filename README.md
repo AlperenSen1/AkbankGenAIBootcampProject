@@ -47,9 +47,9 @@
 
 5.  **Ortam Değişkenini Yapılandırın:**
 terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için tekrarlamanız gerekir:
-        * Windows (PowerShell)(PyCharm Terminali de aynı şekilde): `$env:GOOGLE_API_KEY = "AIzaSy..."`
-        * Windows (CMD): `set GOOGLE_API_KEY=AIzaSy...`
-        * Mac/Linux: `export GOOGLE_API_KEY=AIzaSy...`
+        * Windows (PowerShell)(PyCharm Terminali de aynı şekilde): `$env:GOOGLE_API_KEY = "KENDİ API KEYİNİZ"`
+        * Windows (CMD): `set GOOGLE_API_KEY=KENDİ API KEYİNİZ`
+        * Mac/Linux: `export GOOGLE_API_KEY=KENDİ API KEYİNİZ`
 
 6.  **Vektör Veritabanı Otomatik Oluşturulacak:** 
     * ⚠️ **Uyarı:** Bu ilk indeks oluşturma işlemi, anayasa metninin uzunluğuna bağlı olarak **birkaç dakika sürebilir** ve Google API kotanızı kullanır. Sonraki çalıştırmalar çok daha hızlı olacaktır.
