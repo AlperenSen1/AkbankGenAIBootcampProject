@@ -31,7 +31,7 @@
 
 2. Sanal Ortam Oluşturun ve Aktive Edin:**
    Uygulamanızın(Örenk PyCharm) terminalini açın ve alttaki kodları sırasıyla çalıştırın
-    ```bash
+    
     python -m venv venv
     # Windows:
     venv\Scripts\activate
