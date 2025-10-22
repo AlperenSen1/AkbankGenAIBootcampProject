@@ -44,27 +44,18 @@
     ```
 
 3.  **Bağımlılıkları Yükleyin:**
-    * Proje klasöründe bir `requirements.txt` dosyası varsa:
-        ```bash
-        pip install -r requirements.txt
-        ```
-    * Veya gerekli paketleri doğrudan kurun (minimal liste):
+   gerekli paketleri doğrudan kurun
         ```bash
         pip install -U "protobuf>=5.29.1" streamlit langchain langchain-core langchain-community langchain-text-splitters langchain-google-genai google-generativeai faiss-cpu python-dotenv
         ```
 
 4.  **Ortam Değişkenini Yapılandırın:**
-    * Proje kök dizininde (`app.py`'nin yanında) **`.env`** adında bir dosya oluşturun.
-    * İçine **sadece** şu satırı ekleyin (kendi anahtarınızla değiştirin):
-        ```
-        GOOGLE_API_KEY=AIzaSy...senin_google_api_anahtarın_buraya...
-        ```
-    * **(Alternatif)** Terminalde `streamlit run app.py` demeden önce ortam değişkenini manuel olarak da ayarlayabilirsiniz (her yeni terminal oturumu için tekrarlamanız gerekir):
+ Terminalde `streamlit run app.py` demeden önce ortam değişkenini manuel olarak da ayarlayabilirsiniz (her yeni terminal oturumu için tekrarlamanız gerekir):
         * Windows (PowerShell): `$env:GOOGLE_API_KEY = "AIzaSy..."`
         * Windows (CMD): `set GOOGLE_API_KEY=AIzaSy...`
         * Mac/Linux: `export GOOGLE_API_KEY=AIzaSy...`
 
-5.  **Vektör Veritabanı Otomatik Oluşturulacak:** Ayrı bir `create_database.py` adımına gerek yoktur. `app.py` ilk kez çalıştığında `faiss_index_anayasa_google_emb/` klasörünü bulamazsa, `anayasa.txt`'yi işleyip Google Embedding API'sine çağrılar yaparak indeksi oluşturacak ve kaydedecektir.
+5.  **Vektör Veritabanı Otomatik Oluşturulacak:** 
     * ⚠️ **Uyarı:** Bu ilk indeks oluşturma işlemi, anayasa metninin uzunluğuna bağlı olarak **birkaç dakika sürebilir** ve Google API kotanızı kullanır. Sonraki çalıştırmalar çok daha hızlı olacaktır.
 
 6.  **Uygulamayı Başlatın:**
