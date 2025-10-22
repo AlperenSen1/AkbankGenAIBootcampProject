@@ -29,9 +29,10 @@
 1.  **Projeyi Edinin:**
     projeyi, projenin ana sayfasındaki "code" yazan yeşil kutuya tıklayarak zip olarak bilgisayarınıza indirin ve ardından PyCharm vb python destekleyen programınızda açın.
 
-2. Sanal Ortam Oluşturun ve Aktive Edin:**
-   Uygulamanızın(Örenk PyCharm) terminalini açın ve alttaki kodları sırasıyla çalıştırın
-    
+2.  **Sanal Ortam Oluşturun ve Aktive Edin:**
+    Uygulamanızın(Örenk PyCharm) terminalini açın ve alttaki kodları sırasıyla çalıştırın
+
+    ```bash
     python -m venv venv
     # Windows:
     venv\Scripts\activate
@@ -39,25 +40,25 @@
     source venv/bin/activate
     ```
 
-4.  **Bağımlılıkları Yükleyin:**
-   gerekli paketleri doğrudan kurun
+3.  **Bağımlılıkları Yükleyin:** 
+    gerekli paketleri doğrudan kurun
 
-        pip install -U "protobuf>=5.29.1" streamlit langchain langchain-core langchain-community langchain-text-splitters langchain-google-genai google-generativeai faiss-cpu python-dotenv
-        
+    ```bash
+    pip install -U "protobuf>=5.29.1" streamlit langchain langchain-core langchain-community langchain-text-splitters langchain-google-genai google-generativeai faiss-cpu python-dotenv
+    ```
 
-5.  **Ortam Değişkenini Yapılandırın:**
-terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için tekrarlamanız gerekir:
-        * Windows (PowerShell)(PyCharm Terminali de aynı şekilde): `$env:GOOGLE_API_KEY = "KENDİ API KEYİNİZ"`
-        * Windows (CMD): `set GOOGLE_API_KEY=KENDİ API KEYİNİZ`
-        * Mac/Linux: `export GOOGLE_API_KEY=KENDİ API KEYİNİZ`
+4.  **Ortam Değişkenini Yapılandırın:**
+    terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için tekrarlamanız gerekir:
+    * Windows (PowerShell)(PyCharm Terminali de aynı şekilde): `$env:GOOGLE_API_KEY = "KENDİ API KEYİNİZ"`
+    * Windows (CMD): `set GOOGLE_API_KEY=KENDİ API KEYİNİZ`
+    * Mac/Linux: `export GOOGLE_API_KEY=KENDİ API KEYİNİZ`
 
-
-6.  **Uygulamayı Başlatın:**
+5.  **Uygulamayı Başlatın:**
     ```bash
     streamlit run app.py
     ```
 
-7.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
+6.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
 
 ## Yapılandırma (Varsayılanlar - `app.py` içinde) ⚙️
 
@@ -65,4 +66,3 @@ terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için te
 * **Embedding Modeli:** `models/text-embedding-004` (Google API)
 * **Parçalama (Chunking):** 1000 karakter boyut, 200 karakter örtüşme (`overlap`)
 * **Getirme (Retrieval) k:** En benzer 5 parça (`k=5`)
-
