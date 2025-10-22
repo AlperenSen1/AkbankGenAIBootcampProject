@@ -27,14 +27,9 @@
 ## Kurulum ⚙️
 
 1.  **Projeyi Edinin:**
-    * Eğer GitHub'daysa, repoyu klonlayın:
-        ```bash
-        git clone [https://github.com/KULLANICI_ADIN/REPO_ADIN.git](https://github.com/KULLANICI_ADIN/REPO_ADIN.git)
-        cd REPO_ADIN
-        ```
-    * Veya proje dosyalarını (`app.py`, `anayasa.txt`) içeren bir klasör oluşturun.
+    projeyi indirin
 
-2.  **(Önerilir) Sanal Ortam Oluşturun ve Aktive Edin:**
+2. Sanal Ortam Oluşturun ve Aktive Edin:**
     ```bash
     python -m venv venv
     # Windows:
@@ -50,7 +45,7 @@
         ```
 
 4.  **Ortam Değişkenini Yapılandırın:**
- Terminalde `streamlit run app.py` demeden önce ortam değişkenini manuel olarak da ayarlayabilirsiniz (her yeni terminal oturumu için tekrarlamanız gerekir):
+terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için tekrarlamanız gerekir:
         * Windows (PowerShell): `$env:GOOGLE_API_KEY = "AIzaSy..."`
         * Windows (CMD): `set GOOGLE_API_KEY=AIzaSy...`
         * Mac/Linux: `export GOOGLE_API_KEY=AIzaSy...`
