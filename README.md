@@ -27,9 +27,10 @@
 ## Kurulum ⚙️
 
 1.  **Projeyi Edinin:**
-    projeyi indirin
+    projeyi, projenin ana sayfasındaki "code" yazan yeşil kutuya tıklayarak zip olarak bilgisayarınıza indirin ve ardından PyCharm vb python destekleyen programınızda açın.
 
 2. Sanal Ortam Oluşturun ve Aktive Edin:**
+   Uygulamanızın(Örenk PyCharm) terminalini açın ve alttaki kodları sırasıyla çalıştırın
     ```bash
     python -m venv venv
     # Windows:
@@ -38,27 +39,27 @@
     source venv/bin/activate
     ```
 
-3.  **Bağımlılıkları Yükleyin:**
+4.  **Bağımlılıkları Yükleyin:**
    gerekli paketleri doğrudan kurun
         ```bash
         pip install -U "protobuf>=5.29.1" streamlit langchain langchain-core langchain-community langchain-text-splitters langchain-google-genai google-generativeai faiss-cpu python-dotenv
         ```
 
-4.  **Ortam Değişkenini Yapılandırın:**
+5.  **Ortam Değişkenini Yapılandırın:**
 terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için tekrarlamanız gerekir:
-        * Windows (PowerShell): `$env:GOOGLE_API_KEY = "AIzaSy..."`
+        * Windows (PowerShell)(PyCharm Terminali de aynı şekilde): `$env:GOOGLE_API_KEY = "AIzaSy..."`
         * Windows (CMD): `set GOOGLE_API_KEY=AIzaSy...`
         * Mac/Linux: `export GOOGLE_API_KEY=AIzaSy...`
 
-5.  **Vektör Veritabanı Otomatik Oluşturulacak:** 
+6.  **Vektör Veritabanı Otomatik Oluşturulacak:** 
     * ⚠️ **Uyarı:** Bu ilk indeks oluşturma işlemi, anayasa metninin uzunluğuna bağlı olarak **birkaç dakika sürebilir** ve Google API kotanızı kullanır. Sonraki çalıştırmalar çok daha hızlı olacaktır.
 
-6.  **Uygulamayı Başlatın:**
+7.  **Uygulamayı Başlatın:**
     ```bash
     streamlit run app.py
     ```
 
-7.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
+8.  Tarayıcınızı açın ve genellikle `http://localhost:8501` adresine gidin.
 
 ## Yapılandırma (Varsayılanlar - `app.py` içinde) ⚙️
 
@@ -67,4 +68,3 @@ terminalde aşağıdaki kodu çalıştırın. her yeni terminal oturumu için te
 * **Parçalama (Chunking):** 1000 karakter boyut, 200 karakter örtüşme (`overlap`)
 * **Getirme (Retrieval) k:** En benzer 5 parça (`k=5`)
 
-## Proje Yapısı 📁
